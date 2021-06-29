@@ -50,3 +50,181 @@ Class diagram with Technician actor:
  ![class diagram](./cd2.jpg)
 
 All classes are same with addition of Technician class. Technician can add more cash to ATM. ATM has pre define amount of cash when application starts, user cant withdraw more cash then available cash in Atm. ATM machine can manage by 1 technician. Bank can have many or more technicains.
+
+Application is built in JAVA with OOP logic and implementation. 
+Interaction:
+	When program starts there are two options:
+*************** ATM *******************
+If you are user press 1 , if you are technician press 2
+
+User interaction:
+User enter his or her ID and pin to use his or her account.
+*************** Welcome to ATM *******************
+******  Enter account holder name *******
+Shariq
+Enter account password
+Qwerty
+Matched, Welcome Shariq. Your balance is 10000.0
+Then menu displays with 6 options.
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+Balance inquiry:
+1
+Your current balance is : 10000.0
+
+2. Withdraw:
+*User cant withdraw cash if cash is not available in bank*
+
+
+Enter the amount to withdrraw
+11000
+Sorry !! Your request could not be proceed ... ATM is out of cash
+
+Enter the amount to withdrraw
+1000
+Successfull withdraw. Your Remaining balance is:  9000.0
+
+*User cannot withdraw cash if amount is not available in his account.*
+Enter the amount to withdrraw
+4000
+You have insufficient balance
+
+3. Deposit:
+ Initial balance of Shariq is 10000 
+Matched, Welcome Shariq. Your balance is 10000.0
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+3
+Enter the amount to deposit
+5000
+Successfull deposit. Your balance is now:  15000.0
+
+
+
+4. Transfer:
+*Initial balance of shariq is 10000 and Yasir is 1000, so if Shariq transfer 5000 to Yasir :*
+Matched, Welcome Shariq.Your balance is 10000.0
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+4
+Enter the name of reciever account
+Yasir
+Account Found with name,Yasir
+Enter the amount to transfer
+5000
+Successfull Transfer. Your Remaining balance is:  5000.0
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+6
+ *************** ATM *******************
+If you are user press 1 , if you are technician press 2
+1
+ *************** Welcome to ATM *******************
+******  Enter account holder name *******
+Yasir
+Enter account password
+qwerty1
+Matched, Welcome Yasir. Your balance is 6000.0
+
+*Yasir balance becomes 6000 and Shariq becomes 5000.*
+
+Technician interaction:
+*Technician can add more cash to atm*
+Default available cash in ATM is 10000. User cant withdraw more cash than 9000 , but if technician add more cash he or she can then withdraw more cash.
+*Go through of above statement*
+
+
+*************** ATM *******************
+If you are user press 1 , if you are technician press 2
+1
+ *************** Welcome to ATM *******************
+******  Enter account holder name *******
+Shariq
+Enter account password
+qwerty
+Matched, Welcome Shariq.Your balance is 10000.0
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+2
+Enter the amount to withdrraw
+10000
+Sorry !! Your request could not be proceed ... ATM is out of cash
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+6
+ *************** ATM *******************
+If you are user press 1 , if you are technician press 2
+2
+ *************** ATM Maintanance*******************
+******  Enter your ID *******
+242431
+Enter account password
+abc123
+Matched, Welcome
+ *************** Welcome *******************
+ Current ATM cash is 9000.0
+ To add cash press 1 , 0 to exit
+1
+ Enter cash to add to ATM
+5000
+ Updated ATm cash is 14000.0
+ *************** ATM *******************
+If you are user press 1 , if you are technician press 2
+1
+ *************** Welcome to ATM *******************
+******  Enter account holder name *******
+Shariq
+Enter account password
+qwerty
+Matched, Welcome Shariq.Your balance is 10000.0
+Menu :
+1.Balance ENquiry
+2.Withdrawl
+3.Deposit
+4.Transfer
+5.Exit
+6. Use ATM Again with new account
+
+2
+Enter the amount to withdrraw
+10000
+Successfull withdraw. Your Remaining balance is:  0.0
+
+First shariq try to withdraw 10000 which is greater than available cash 9000, so it cant withdraw or withdrawal request was rejected, then technician added more 5000 cash then Shariq withdrawal request was completed.
+
